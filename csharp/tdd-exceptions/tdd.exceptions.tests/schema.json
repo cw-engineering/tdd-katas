@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-03/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "line": {
+          "type": "integer",
+          "required": true
+        },
+        "column": {
+          "type": "integer",
+          "required": true
+        },
+        "offset": {
+          "type": "integer",
+          "required": true
+        }
+      }
+    }
+  }
+}
