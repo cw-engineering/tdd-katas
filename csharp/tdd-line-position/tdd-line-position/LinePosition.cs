@@ -2,7 +2,7 @@
 
 namespace TddLinePosition
 {
-    public struct LinePosition
+    public struct LinePosition : IEquatable<LinePosition>
     {
 
         public int Line { get; }
@@ -23,15 +23,41 @@ namespace TddLinePosition
 
         public static bool TryParse(string text, out LinePosition x)
         {
-            if (text != null) {
+            if (!string.IsNullOrEmpty(text))
+            {
                 var parsedText = text.Split(':');
-                int line = int.Parse(parsedText[0]);
-                int column = int.Parse(parsedText[1]);
-                x = new LinePosition(line, column);
-                return true;
+                try
+                {
+                    int column = int.Parse(parsedText[1]);
+
+                    int line = int.Parse(parsedText[0]);
+
+                    if (line >= 0 && column >= 0)
+                    {
+                        x = new LinePosition(line, column);
+                        return true;
+                    }
+                }
+                catch (FormatException)
+                {
+                    x = default;
+                    return false;
+                }
+
             }
             x = default;
             return false;
+        }
+
+        public void Deconstruct(out int location, out int column)
+        {
+            column = Column;
+            location = Line;
+        }
+
+        public bool Equals(LinePosition other)
+        {
+            return true;
         }
     }
 }
