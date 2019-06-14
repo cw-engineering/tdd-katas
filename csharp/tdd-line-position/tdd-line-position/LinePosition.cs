@@ -2,7 +2,7 @@
 
 namespace TddLinePosition
 {
-    public struct LinePosition : IEquatable<LinePosition>
+    public struct LinePosition : IEquatable<LinePosition>, IComparable<LinePosition>
     {
 
         public int Line { get; }
@@ -51,13 +51,29 @@ namespace TddLinePosition
 
         public void Deconstruct(out int location, out int column)
         {
-            column = 1;
+            column = Column;
             location = Line;
         }
 
         public bool Equals(LinePosition other)
         {
-            return true;
+            return Line == other.Line && Column == other.Column;
         }
+
+        public override int GetHashCode()
+        {
+            var hashCode = -1456208474;
+            hashCode = hashCode * -1521134295 + Line.GetHashCode();
+            hashCode = hashCode * -1521134295 + Column.GetHashCode();
+            return hashCode;
+        }
+
+        public static bool operator ==(LinePosition left, LinePosition right)
+            => left.Equals(right);
+
+        public static bool operator !=(LinePosition left, LinePosition right)
+        => !(left == right);
+
+        public int CompareTo(LinePosition linePosition2) => 0;
     }
 }
