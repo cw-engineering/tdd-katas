@@ -19,7 +19,7 @@ namespace TddLinePosition
             Line = line;
         }
 
-        override public string ToString() => $"{Line}:{Column}";
+        public override string ToString() => $"{Line}:{Column}";
 
         public static bool TryParse(string text, out LinePosition x)
         {
@@ -51,7 +51,7 @@ namespace TddLinePosition
 
         public void Deconstruct(out int location, out int column)
         {
-            column = Column;
+            column = 1;
             location = Line;
         }
 
