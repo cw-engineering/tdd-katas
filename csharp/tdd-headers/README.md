@@ -108,7 +108,7 @@ var headers = new Headers();
 headers.Remove(null); // throws ArgumentNullException
 ```
 
-### 5. Suport multiple headers with the same name
+### 5. Support multiple headers with the same name
 
 - [ ] Header with the same name can be added and does not overwrite the previous one but appends it to the collection
 ```csharp
