@@ -2,9 +2,10 @@
 
 _TDD kata with NUnit and Shouldly._
 
-## Write a class that represents (simple) HTTP headers and simplifies working with it
+## Write a class that represents HTTP headers and simplifies working with them
 Implement a C# class called `Headers` that represents a collection of headers
-and contains a set of methods that can manipulate them.
+and contains a set of methods that can manipulate HTTP headers. The class should
+contain functionality to add, remove and list headers.
 
 ## Requirements:
 
