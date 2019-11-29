@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace tdd.recently_used_list
+namespace Tdd.Collections
 {
-    public interface IRecentlyUsedList<T> : IEnumerable<(string id, T value)>
+    public interface IRecentlyUsedList<T> : IEnumerable<(string Id, T Value)>
         where T: struct
     {
-        (string id, T value) this[int index] { get; }
+        (string Id, T Value) this[int index] { get; }
+
         int Capacity { get; }
+
         int Count { get; }
+
         void Add(string id, T value);
-        // TODO: Optional
-        // void Add(string id, T value, TimeSpan expiresIn);
+
+        void Add(string id, T value, TimeSpan expiresIn) => throw new NotImplementedException();
     }
 }
