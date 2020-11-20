@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Tdd.Collections
@@ -8,37 +9,46 @@ namespace Tdd.Collections
     public class RecentlyUsedList<T> : IRecentlyUsedList<T>
         where T : struct
     {
-        private readonly List<(string Id, T Value)> arr = new List<(string Id, T Value)>();
+        private T _value;
 
-        // Define the indexer to allow client code to use [] notation.
-        public (string Id, T Value) this[int index] => arr[index];
+        private List<(string Id, T Value)> _list;
 
-        public int Capacity => throw new NotImplementedException();
-
-        public int Count
+        public RecentlyUsedList(int capacity = 10)
         {
-            get
-            {
-                return arr.Count;
-            }
+            _list = new List<(string Id, T Value)>();
+            Capacity = capacity;
         }
 
-        public void Add(string id, T value) {
-            
-            for(int i=0; i<Count; i++)
-            {
-                if(arr[i].Id == id)
-                {
-                    arr.RemoveAt(i);
-                    break;
-                }
-            }
-            
+        public (string Id, T Value) this[int index] => _list[index];
 
+        public int Capacity { get; set; } 
 
-            arr.Add((id,value));
+        public int Count => _list.Count;
+
+        public void Add(string id, T value)
+        {
+            if (id==null) throw new ArgumentNullException("id");
+            
+            if (id.Length == 0) throw new ArgumentOutOfRangeException("id");
+
+            if (Count == Capacity) return;
+
+            var existId = _list.Any(i => String.Equals(i.Id, id, StringComparison.OrdinalIgnoreCase));
+
+            if (!existId)
+                _list.Insert(0, (id, value));
         }
-        public IEnumerator<(string Id, T Value)> GetEnumerator() => throw new NotImplementedException();
-        IEnumerator IEnumerable.GetEnumerator() => throw new NotImplementedException();
+
+        public void Add(string id, T value, TimeSpan expiresIn) => throw new NotImplementedException();
+
+        public IEnumerator<(string Id, T Value)> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

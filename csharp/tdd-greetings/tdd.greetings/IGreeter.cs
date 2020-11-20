@@ -4,6 +4,6 @@ namespace tdd.greetings
 {
     public interface IGreeter
     {
-        string Greet(string name, DateTime? dateOfBirth);
+        string Greet(string name, DateTime? dateOfBirth = null);
     }
 }

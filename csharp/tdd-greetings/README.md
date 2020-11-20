@@ -6,7 +6,7 @@ _TDD kata with NUnit, NSubstitute and Shouldly._
 You work for a company called SofTele on a communication product called E-Pistler. You team has been asked to write a method that, given a username and an optional date of birth, generates a greeting message. The contract has been provided via the `IGreeter` interface.
 
 #### Requirement 1
-Name is interpolated in a simple greeting. For example, when name is "Bert", the method should return a string `"Hello, Bert."`.
+Name is interpolated in a simple greeting. For example, when name is "Bert", the method should return a string `"Hello, Bert!"`.
 
 #### Requirement 2
 Handle nulls end empty strings by introducing a stand-in. For example, when name is empty, then the method should return `"Hello, my friend."`

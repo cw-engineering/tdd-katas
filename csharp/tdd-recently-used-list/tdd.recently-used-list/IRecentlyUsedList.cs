@@ -14,6 +14,6 @@ namespace Tdd.Collections
 
         void Add(string id, T value);
 
-        void Add(string id, T value, TimeSpan expiresIn) => throw new NotImplementedException();
+        void Add(string id, T value, TimeSpan expiresIn);
     }
 }
