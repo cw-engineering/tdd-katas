@@ -2,12 +2,10 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace tdd.asyncqueue
+namespace Tdd
 {
-    public interface IAsyncQueue<T>  : IEnumerable<T>
+    public interface IAsyncQueue<T>: IReadOnlyCollection<T>
     {
-        int Count { get; }
-
         void Enqueue(T value);
 
         Task<T> DequeueAsync(CancellationToken cancellationToken = default);
