@@ -2,7 +2,7 @@
 
 _TDD kata with NUnit and Shouldly. You will need NUnit 3 Test Adapter extension._
 
-### Create a method that, given a delimited string, returns the sum of the values.
+### Create a method that, given a delimited string of integer values, returns the sum of the values.
 
 * empty or null string returns 0
 * comma delimited numbers are added together, i.e. `"1"` returns `1`, `"1,2"` returns `3`, etc...
