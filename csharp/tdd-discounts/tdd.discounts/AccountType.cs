@@ -1,4 +1,4 @@
-﻿namespace tdd.discounts
+﻿namespace Tdd
 {
     public enum AccountType
     {
