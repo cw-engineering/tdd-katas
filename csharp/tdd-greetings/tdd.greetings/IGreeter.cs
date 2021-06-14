@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace tdd.greetings
+namespace Tdd
 {
     public interface IGreeter
     {

@@ -1,32 +1,19 @@
 ﻿using NUnit.Framework;
 using Shouldly;
-using System;
-using NSubstitute;
 
-namespace tdd.greetings.tests
+namespace Tdd.Tests
 {
     [TestFixture]
     public class GreeterTests
     {
-        [TestCase("John")]
-        [TestCase("Tom")]
-        public void Greet_OutputsGreeting_WhenNamePassed(string name)
-        {
-            IGreeter greeter = new Greeter();
-
-            var result = greeter.Greet(name);
-
-            result.ShouldBe($"Hello, {name}!");
-        }
-
         [Test]
-        public void Greet_UsesStandIn_WhenNullPassed()
+        public void Greet_OutputsGreetingWithName_WhenNamePassed()
         {
             IGreeter greeter = new Greeter();
 
-            var result = greeter.Greet(null);
+            var result = greeter.Greet("Tom");
 
-            result.ShouldBe($"Hello, my friend A.");
+            result.ShouldBe("Hello, Tom!");
         }
     }
 }
