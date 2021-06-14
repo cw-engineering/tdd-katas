@@ -1,34 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace tdd.headers
+namespace Tdd
 {
-    public class Headers
+    public class Headers : IHeaders
     {
-        private readonly Dictionary<string, string> _headers = new Dictionary<string, string>();        
         public string this[string field]
         {
-            get
-            {
-                return _headers.ContainsKey(field.ToLower())
-                    ? _headers[field.ToLower()]
-                    : null;
-            }
-            set
-            {
-                if (field == null)
-                {
-                    throw new ArgumentNullException();
-                }
-                _headers[field.ToLower()] = value;
-            }
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
         }
 
-        public int Count { get => _headers.Count; }
+        public int Count => throw new NotImplementedException();
 
-        public void Add(string v1, string v2)
+        public void Add(string field, string value)
         {
-            this[v1] = v2;
+            throw new NotImplementedException();
+        }
+
+        public void Remove(string field)
+        {
+            throw new NotImplementedException();
         }
     }
 }

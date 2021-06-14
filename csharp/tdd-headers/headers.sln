@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tdd.headers", "tdd.headers\tdd.headers.csproj", "{0753964C-9129-4A8D-AD79-C3C3B292FB9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.headers.tests", "tdd.headers.tests\tdd.headers.tests.csproj", "{7F28CB48-58BA-4EA0-BDFC-CDE3DCC7D4DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tdd.headers.tests", "tdd.headers.tests\tdd.headers.tests.csproj", "{7F28CB48-58BA-4EA0-BDFC-CDE3DCC7D4DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{A462A37F-ADE8-4BA3-B128-AB3E89C6902D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
