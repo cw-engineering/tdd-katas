@@ -6,7 +6,7 @@ using Newtonsoft.Json.Schema;
 using Shouldly;
 
 
-namespace tdd.exceptions.tests
+namespace Tdd.Tests
 {
     public static class ShouldlyExtensions
     {

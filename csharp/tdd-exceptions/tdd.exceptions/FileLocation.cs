@@ -1,4 +1,4 @@
-﻿namespace tdd.exceptions
+﻿namespace Tdd
 {
     public class FileLocation
     {

@@ -16,7 +16,7 @@ The exception must:
  * Be serializable to binary, XML and JSON format
  * JSON must conform to attached **schema.json** file
 
-### Issues
+### Fix the following issues
 
  1. Binary serialization does not work.
  2. JSON is not not valid according to the schema file.
