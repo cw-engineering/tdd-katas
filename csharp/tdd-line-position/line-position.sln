@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd-line-position", "tdd-line-position\tdd-line-position.csproj", "{2544EFFF-25BD-44F4-B6F4-FD86C96B2543}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.line-position", "tdd.line-position\tdd.line-position.csproj", "{2544EFFF-25BD-44F4-B6F4-FD86C96B2543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd-line-position.tests", "tdd-line-position.tests\tdd-line-position.tests.csproj", "{48C38B20-2608-450F-8138-753CB18A62B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.line-position.tests", "tdd.line-position.tests\tdd.line-position.tests.csproj", "{48C38B20-2608-450F-8138-753CB18A62B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

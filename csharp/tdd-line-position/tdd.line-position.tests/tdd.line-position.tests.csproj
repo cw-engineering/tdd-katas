@@ -1,13 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-
+    <TargetFramework>net6.0</TargetFramework>
     <IsPackable>false</IsPackable>
-
-    <RootNamespace>TddLinePosition.Tests</RootNamespace>
-
-    <LangVersion>7.3</LangVersion>
+    <RootNamespace>Tdd.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\tdd-line-position\tdd-line-position.csproj" />
+    <ProjectReference Include="..\tdd.line-position\tdd.line-position.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System" />
+    <Using Include="NUnit.Framework"/>
+    <Using Include="Shouldly"/>
   </ItemGroup>
 
 </Project>
