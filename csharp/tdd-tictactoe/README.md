@@ -12,11 +12,20 @@ interface IGamePlay {
     IGameState State();
 }
 ```
+and
 ```c#
 interface IGameState {
     Player?[,] Board { get; }
     Player? Winner { get; }
     bool IsDraw { get; }
+}
+```
+where
+```c#
+public enum Player
+{
+    X = 'X',
+    O = 'O'
 }
 ```
 

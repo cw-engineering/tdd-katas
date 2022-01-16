@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.tictactoe", "tdd.tictactoe\tdd.tictactoe.csproj", "{4B694265-BB60-4E3E-8B47-0A77E2CE7376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tdd.tictactoe", "tdd.tictactoe\tdd.tictactoe.csproj", "{4B694265-BB60-4E3E-8B47-0A77E2CE7376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.tictactoe.tests", "tdd.tictactoe.tests\tdd.tictactoe.tests.csproj", "{53A47EE3-363C-431D-BA61-696FDF6A78B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tdd.tictactoe.tests", "tdd.tictactoe.tests\tdd.tictactoe.tests.csproj", "{53A47EE3-363C-431D-BA61-696FDF6A78B0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B1C4649-1675-44B3-B576-DA51D814A506}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "help", "help", "{8B1C4649-1675-44B3-B576-DA51D814A506}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
