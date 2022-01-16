@@ -1,17 +1,13 @@
-﻿using NUnit.Framework;
-using Shouldly;
+﻿namespace Tdd.Tests;
 
-namespace Tdd.Tests
+[TestFixture]
+public class AsyncQueueTests
 {
-    [TestFixture]
-    public class AsyncQueueTests
+    [Test]
+    public void AsyncQueue_ImplementsIAsyncQueue()
     {
-        [Test]
-        public void AsyncQueue_ImplementsIAsyncQueue()
-        {
-            var queue = new AsyncQueue<short>();
+        var queue = new AsyncQueue<short>();
 
-            queue.ShouldBeOfType<IAsyncQueue<short>>();
-        }
+        queue.ShouldBeOfType<IAsyncQueue<short>>();
     }
 }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.asyncqueue", "tdd.async
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdd.asyncqueue.tests", "tdd.asyncqueue.tests\tdd.asyncqueue.tests.csproj", "{D078E7CB-73FF-4D7B-9298-103472CB2E83}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D5C6E063-531D-4996-BBD1-889EBB577E43}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "help", "help", "{D5C6E063-531D-4996-BBD1-889EBB577E43}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection

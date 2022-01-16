@@ -8,6 +8,6 @@ namespace Tdd
     {
         void Enqueue(T value);
 
-        Task<T> DequeueAsync(CancellationToken cancellationToken = default);
+        ValueTask<T> DequeueAsync(CancellationToken cancellationToken = default);
     }
 }

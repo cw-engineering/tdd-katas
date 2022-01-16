@@ -17,7 +17,7 @@ Requirements:
 * `DequeueAsync` should cancel waiting for available item if the cancellation token is cancelled and should throw TaskCancelledException.
 * `Count` should return the number of items in the queue.
 * The queue can be enumerated while it is being modified.
-  ```csharp
+  ```c#
     queue.Enqueue(1);
     queue.Enqueue(2);
     foreach(var item in queue) {
