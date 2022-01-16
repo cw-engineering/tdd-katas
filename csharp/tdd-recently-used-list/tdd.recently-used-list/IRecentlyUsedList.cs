@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Tdd.Collections
+namespace Tdd
 {
     public interface IRecentlyUsedList<T> : IEnumerable<(string Id, T Value)>
         where T: struct
